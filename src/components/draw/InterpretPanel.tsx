@@ -1,8 +1,9 @@
 'use client';
 
-import { useState, useRef, useCallback } from 'react';
+import { useState, useCallback } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Spread, DrawnCard } from '@/lib/types';
+import { generateInterpretation } from '@/lib/interpret';
 
 interface Props {
   spread: Spread;
@@ -22,53 +23,13 @@ export default function InterpretPanel({ spread, drawnCards }: Props) {
     setDone(false);
 
     try {
-      const response = await fetch('/api/interpret', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({
-          spread: spread.slug,
-          cards: drawnCards.map((dc) => ({
-            cardId: dc.card.id,
-            isReversed: dc.isReversed,
-            position: dc.position,
-          })),
-        }),
-      });
-
-      if (!response.ok) {
-        throw new Error(`请求失败 (${response.status})`);
+      const gen = generateInterpretation(drawnCards, spread.slug);
+      for await (const chunk of gen) {
+        setText((prev) => prev + chunk);
       }
-
-      const reader = response.body?.getReader();
-      if (!reader) throw new Error('无法读取响应');
-
-      const decoder = new TextDecoder();
-      let buffer = '';
-
-      while (true) {
-        const { done: streamDone, value } = await reader.read();
-        if (streamDone) break;
-
-        buffer += decoder.decode(value, { stream: true });
-        const lines = buffer.split('\n');
-        buffer = lines.pop() || '';
-
-        for (const line of lines) {
-          if (line.startsWith('data: ')) {
-            const content = line.slice(6);
-            if (content === '[DONE]') {
-              setDone(true);
-              return;
-            }
-            setText((prev) => prev + content);
-          } else if (line.startsWith('error: ')) {
-            throw new Error(line.slice(7));
-          }
-        }
-      }
+      setDone(true);
     } catch (err: unknown) {
-      if (err instanceof Error && err.name === 'AbortError') return;
-      setError(err instanceof Error ? err.message : '解读请求失败，请稍后重试');
+      setError(err instanceof Error ? err.message : '解读失败，请重试');
     } finally {
       setLoading(false);
     }
