@@ -1,0 +1,161 @@
+[
+  {
+    "slug": "three-card",
+    "name": "三张牌",
+    "category": "通用基础",
+    "cardCount": 3,
+    "description": "最经典的塔罗牌阵，适合快速了解任何问题的过去、现在和未来趋势。新手友好，三张牌一目了然。",
+    "suitableFor": "任何单一问题的快速分析，适合日常自省和初学者",
+    "difficulty": "beginner",
+    "positions": [
+      { "index": 1, "name": "过去", "description": "影响当前状况的过去因素或根源" },
+      { "index": 2, "name": "现在", "description": "当前的状态、挑战或核心问题" },
+      { "index": 3, "name": "未来", "description": "按照当前趋势发展的可能结果" }
+    ]
+  },
+  {
+    "slug": "time-flow",
+    "name": "时间流",
+    "category": "通用基础",
+    "cardCount": 3,
+    "description": "以时间为轴线，揭示事情的发展脉络。比三张牌更侧重时间维度的预测分析，适合有明确时间指向的问题。",
+    "suitableFor": "有时间指向的预测分析，理清事情发展的时间线",
+    "difficulty": "beginner",
+    "positions": [
+      { "index": 1, "name": "过去", "description": "已经发生的事及其对当下的影响" },
+      { "index": 2, "name": "现在", "description": "正在发生或即将发生的核心事件" },
+      { "index": 3, "name": "未来", "description": "未来的发展方向和可能的结果" }
+    ]
+  },
+  {
+    "slug": "sacred-triangle",
+    "name": "圣三角",
+    "category": "通用基础",
+    "cardCount": 3,
+    "description": "又名「圣三角占卜法」，是历史最为悠久的牌阵之一。三张牌形成倒三角，帮助你理清事情的起因、现状和结果。",
+    "suitableFor": "理清事情前因后果，适合做决策前的整体分析",
+    "difficulty": "beginner",
+    "positions": [
+      { "index": 1, "name": "起因", "description": "事情发生的根源和背景" },
+      { "index": 2, "name": "现状", "description": "当前事情的发展状态" },
+      { "index": 3, "name": "结果", "description": "事情可能的最终走向" }
+    ]
+  },
+  {
+    "slug": "lover-pyramid",
+    "name": "恋人金字塔",
+    "category": "爱情人际",
+    "cardCount": 4,
+    "description": "专为爱情关系设计的经典牌阵。从双方的想法、现状到未来发展，四张牌构成一座爱情金字塔，帮你洞察感情的方方面面。",
+    "suitableFor": "情侣关系分析，了解双方的真实想法和关系走向",
+    "difficulty": "intermediate",
+    "positions": [
+      { "index": 1, "name": "你的想法", "description": "你对这段关系的真实感受和期望" },
+      { "index": 2, "name": "对方想法", "description": "对方对这段关系的真实想法和态度" },
+      { "index": 3, "name": "当前关系", "description": "两人目前关系的真实状态" },
+      { "index": 4, "name": "未来发展", "description": "这段关系可能的未来走向" }
+    ]
+  },
+  {
+    "slug": "inspiration",
+    "name": "灵感对应",
+    "category": "爱情人际",
+    "cardCount": 6,
+    "description": "深度解析双方外在表现与内心真实感受的牌阵。帮助你了解彼此的真实想法，看清关系中的表象与本质。",
+    "suitableFor": "双向深度关系解析，当你需要了解双方的真心时",
+    "difficulty": "intermediate",
+    "positions": [
+      { "index": 1, "name": "你的外在", "description": "你在关系中展现出来的样子" },
+      { "index": 2, "name": "对方外在", "description": "对方在关系中表现出来的样子" },
+      { "index": 3, "name": "你的内在", "description": "你的内心真实的感受和想法" },
+      { "index": 4, "name": "对方内在", "description": "对方内心真实的感受和想法" },
+      { "index": 5, "name": "关系现状", "description": "两人关系的真实状态" },
+      { "index": 6, "name": "未来发展", "description": "关系下一步的可能发展" }
+    ]
+  },
+  {
+    "slug": "wealth-tree",
+    "name": "财富之树",
+    "category": "事业财富",
+    "cardCount": 5,
+    "description": "以树的形态分布牌位，从根基到树冠全面分析你的财运。看清财富根基、当前状况、潜在机会和未来趋势。",
+    "suitableFor": "财运分析、投资决策、事业发展的财富方向",
+    "difficulty": "intermediate",
+    "positions": [
+      { "index": 1, "name": "财富根基", "description": "你的财富基础和潜在资源" },
+      { "index": 2, "name": "当前财况", "description": "目前的财务状况和收入状态" },
+      { "index": 3, "name": "潜在机会", "description": "隐藏的财富机会和增长可能" },
+      { "index": 4, "name": "障碍", "description": "影响财富增长的阻碍因素" },
+      { "index": 5, "name": "未来趋势", "description": "财富发展的长远趋势" }
+    ]
+  },
+  {
+    "slug": "two-choices",
+    "name": "二选一",
+    "category": "运程选择",
+    "cardCount": 5,
+    "description": "当你面对人生重大选择时，这个牌阵帮你对比两个选项的可能发展路径和最终结果，让你做出更明智的决定。",
+    "suitableFor": "两个选项之间的抉择，看清不同选择带来的后果",
+    "difficulty": "intermediate",
+    "positions": [
+      { "index": 1, "name": "现状", "description": "你当前所处的状况和内心状态" },
+      { "index": 2, "name": "选择A过程", "description": "如果选择A，过程会是怎样的" },
+      { "index": 3, "name": "选择A结果", "description": "选择A最终可能的结果" },
+      { "index": 4, "name": "选择B过程", "description": "如果选择B，过程会是怎样的" },
+      { "index": 5, "name": "选择B结果", "description": "选择B最终可能的结果" }
+    ]
+  },
+  {
+    "slug": "mind-body-spirit",
+    "name": "身心灵",
+    "category": "自我探索",
+    "cardCount": 3,
+    "description": "从身体、心理、灵性三个层面深度探索自我。帮助你了解自己在不同维度上的状态，找到成长和疗愈的方向。",
+    "suitableFor": "自我认知与成长，当你需要全面了解自己时",
+    "difficulty": "beginner",
+    "positions": [
+      { "index": 1, "name": "身体层面", "description": "身体健康、精力和物质层面的状态" },
+      { "index": 2, "name": "心理层面", "description": "情绪、思维和心理状态" },
+      { "index": 3, "name": "灵性层面", "description": "精神成长、内在智慧和生命意义" }
+    ]
+  },
+  {
+    "slug": "hexagram",
+    "name": "六芒星",
+    "category": "运程选择",
+    "cardCount": 7,
+    "description": "最全面的运势预测牌阵之一。七张牌组成六芒星阵，从过去、现在到未来，全面揭示事件发展的各个维度。",
+    "suitableFor": "重大事件的全面预测分析",
+    "difficulty": "advanced",
+    "positions": [
+      { "index": 1, "name": "过去", "description": "影响当前状况的过去的根源" },
+      { "index": 2, "name": "现在", "description": "当前所处的状况和挑战" },
+      { "index": 3, "name": "未来", "description": "事情发展的方向" },
+      { "index": 4, "name": "对策", "description": "应对当前状况的最佳方式" },
+      { "index": 5, "name": "环境", "description": "周围环境和他人对你的影响" },
+      { "index": 6, "name": "希望与恐惧", "description": "你内心的期望和隐藏的担忧" },
+      { "index": 7, "name": "结果", "description": "综合各方面的最终发展结果" }
+    ]
+  },
+  {
+    "slug": "celtic-cross",
+    "name": "凯尔特十字",
+    "category": "事业财富",
+    "cardCount": 10,
+    "description": "塔罗中最经典、最全面的牌阵。十张牌从多个维度全面剖析任何重大问题——现状、挑战、过去、未来、自我、环境和最终结果。",
+    "suitableFor": "重大事件或人生转折点的全面深度分析",
+    "difficulty": "advanced",
+    "positions": [
+      { "index": 1, "name": "现状", "description": "当前问题的核心本质" },
+      { "index": 2, "name": "助力/阻力", "description": "横跨在你面前的力量——可能帮助或阻碍你" },
+      { "index": 3, "name": "基础", "description": "问题的基础和根源" },
+      { "index": 4, "name": "过去", "description": "刚刚过去或正在离开的影响" },
+      { "index": 5, "name": "目标", "description": "你希望达到的最高目标" },
+      { "index": 6, "name": "未来", "description": "即将到来的近期未来发展" },
+      { "index": 7, "name": "自我", "description": "你在这个局面中的态度和状态" },
+      { "index": 8, "name": "环境", "description": "外界环境和他人的影响" },
+      { "index": 9, "name": "希望与恐惧", "description": "你内心的期望和隐藏的担忧" },
+      { "index": 10, "name": "结果", "description": "所有因素综合后的最终可能结果" }
+    ]
+  }
+]
